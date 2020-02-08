@@ -66,6 +66,7 @@ bot.on("ready", async () => {
 //При получении сообщения
 bot.on("message", async message => {
 	if(message.author.bot) return; //Если отправитель бот
+	if(message.channel.type == "dm") return;
 	if(!message.content.startsWith(process.env.prefix)) return; //Если сообщение без префикса
 
 	let args = message.content.substring(message.content.split(" ")[0].length + 1); //Получаем аргументы
