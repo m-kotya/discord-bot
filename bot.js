@@ -28,7 +28,7 @@ fs.readdir("./cmds/", async (err, files) => {
 //При готовности бота
 bot.on("ready", async () => {
 	console.log(`Бот готов! Имя бота: ${bot.user.username}`); //Сообщение о готовности
-	bot.user.setGame("TinyBot | NK"); //Игра бота
+	bot.user.setGame("Half-Life 3); //Игра бота
 	bot.user.setStatus("online"); //Статус бота
 	
 	//Генерируем ссылку на приглашения бота
